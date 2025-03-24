@@ -1,0 +1,14 @@
+training_name = "cmd_ai"
+
+[docker]
+docker_image = "cmd_ai:latest" # docker image name 
+cpu_limit = 3                  # Core
+memory_limit = 2048            # MB
+disk_limit = 256               # MB
+privileged = false
+port = 1337
+
+[flag]
+is_dynamic = true
+static_flag = "flag{This_is_a_static_flag}" # static
+is_nc = true
